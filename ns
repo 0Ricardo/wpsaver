@@ -1,0 +1,20 @@
+
+; <<>> DiG 9.10.6 <<>> praysoft.net
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 63997
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;praysoft.net.			IN	A
+
+;; ANSWER SECTION:
+praysoft.net.		86400	IN	A	143.95.251.39
+
+;; Query time: 3212 msec
+;; SERVER: 192.168.1.1#53(192.168.1.1)
+;; WHEN: Fri Jul 31 13:38:22 AST 2020
+;; MSG SIZE  rcvd: 57
+
