@@ -11,30 +11,29 @@ import 'package:url_launcher/url_launcher.dart';
 class App {
 
   /// ************** Required App info ************ ///
-  final String appPackageName = "com.your.package.name";
+  final String appPackageName = "com.xamarindo.wpstatusaver";
   final int appVersionNumber = 1;
   final String appVersionName = "Version: 1.0.0";
-  final String appName = "StatusSaver";
-  final String appShortDescription = "Status Saver for WhatsApp";
-  final String appFullDescription = "StatusSaver is an application that helps "
+  final String appName = "Wp Pic & Video Status Saver";
+  final String appShortDescription = "Save WhatsApp Status Easily";
+  final String appFullDescription = "Wp Pic & Video Status Saver is an application that helps "
       "you to permanently save the status of your WhatsApp contacts on your mobile phone.";
 
 
   /// Optional Facebook info
   // If you don't want facebook page visit -> go to widgets/my_navigation_drawer.dart
   // and comment "Like our page" ListTile.
-  final String facebookPageId = "0000";
-  final String facebookPageUsername = "facebook.page.username";
+  final String facebookPageUsername = "praysoft";
 
 
    /// ************ Required Admob info ******************** ///
 
-   final String adMobAppId = "ca-app-pub-3940256099942544~3347511713";
+   final String adMobAppId = "ca-app-pub-8521044456540023~3652646925";
 
     /// Create banner Ad
-    BannerAd createBannerAd(){
+    BannerAd createBannerAd() {
       return new BannerAd(
-          adUnitId: "ca-app-pub-3940256099942544/6300978111",
+          adUnitId: "ca-app-pub-8521044456540023/1533750040",
           size: AdSize.banner,
           targetingInfo: targetInfo,
           listener: (MobileAdEvent event){
@@ -45,9 +44,9 @@ class App {
 
 
     /// Create Interstitial Ad
-    InterstitialAd createInterstitialAd(){
+    InterstitialAd createInterstitialAd() {
       return new InterstitialAd(
-          adUnitId: "ca-app-pub-3940256099942544/1033173712",
+          adUnitId: "ca-app-pub-8521044456540023/5391914639",
           targetingInfo: targetInfo,
           listener: (MobileAdEvent event){
             print('InterstitialAd MobileAdEvent: $event');
@@ -81,8 +80,10 @@ class App {
   /// Share app
   Future<void> shareApp() async {
     Share.text('Share',
+        '$appShortDescription \n'
         'Get $appName on Google Play Store: '
-        'https://play.google.com/store/apps/details?id=$appPackageName\n',
+        'https://play.google.com/store/apps/details?id=$appPackageName\n'
+        'Install it now!',
         'text/plain'
     );
   }
@@ -101,22 +102,18 @@ class App {
 
   /// Open facebook page in app/browser
   Future<void> openFacebook() async {
-    final facebookPage = "fb://page/$facebookPageId";
     final facebookUrl = 'https://facebook.com/$facebookPageUsername';
     try {
-      final bool openFbApp = await launch(facebookPage);
-      if (!openFbApp) {
         await launch(facebookUrl);
-      }
     } catch(error) {
-      await launch(facebookUrl);
+      throw 'Could not launch $error';
     }
   }
 
 
   /// Open privacy policy page
   Future<void> openPrivacyPage() async {
-    const url = 'https://flutter.dev';
+    const url = 'http://www.sgermosen.com/2020/08/privacy-policy-for-xamarindo.html';
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -144,11 +141,11 @@ class App {
 
 
   /// Get WhatsApp Statuses path
-  Future<String> getStatusesPath() async {
+  Future<String> getStatusesPath(String app) async {
     final Directory absoluteDir = await getExternalStorageDirectory();
     final String externalDirPath = absoluteDir.path.replaceFirst(
         'Android/data/$appPackageName/files', '');
-    final statusesPath = "$externalDirPath/WhatsApp/Media/.Statuses";
+    final statusesPath = "$externalDirPath/$app/Media/.Statuses";
     print('getStatusesPath() -> $statusesPath');
     return statusesPath;
   }

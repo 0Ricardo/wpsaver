@@ -9,6 +9,11 @@ import 'package:status_saver/tabs/photos_tab.dart';
 
 class HomeScreen extends StatefulWidget {
 
+  // Variables
+  final String app;
+
+  HomeScreen({@required this.app});
+
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -18,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
   /// Variables
   final App _app = new App();
   InterstitialAd _interstitial;
-  BannerAd _bannerAd;
+
 
   // Tabs list
   final List<Tab> myTabs = <Tab>[
@@ -45,21 +50,10 @@ class _HomeScreenState extends State<HomeScreen> {
     )),
   ];
 
-  @override
-  void initState() {
-    super.initState();
-    FirebaseAdMob.instance.initialize(appId: _app.adMobAppId);
-    /// Load banner Ad
-    _bannerAd = _app.createBannerAd()
-      ..load()
-      ..show();
-  }
-
 
   @override
   void dispose() {
     _interstitial?.dispose();
-    _bannerAd?.dispose();
     super.dispose();
   }
 
@@ -94,9 +88,9 @@ class _HomeScreenState extends State<HomeScreen> {
           physics: NeverScrollableScrollPhysics(),
           children: [
             /// Images tab body
-            PhotosTab(),
+            PhotosTab(app: widget.app),
             /// Videos tab body
-            VideosTab(),
+            VideosTab(app: widget.app),
             /// Saved Status tab body
             SavedStatusTab(),
           ]

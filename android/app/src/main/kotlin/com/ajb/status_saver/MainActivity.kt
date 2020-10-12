@@ -1,4 +1,4 @@
-package com.your.package.name
+package com.xamarindo.wpstatusaver
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

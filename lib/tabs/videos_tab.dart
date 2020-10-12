@@ -6,6 +6,11 @@ import 'package:status_saver/screens/view_status_screen.dart';
 
 class VideosTab extends StatefulWidget {
 
+  // Variables
+  final String app;
+
+  VideosTab({@required this.app});
+
   @override
   VideosTabState createState() {
     return new VideosTabState();
@@ -23,7 +28,7 @@ class VideosTabState extends State<VideosTab> {
     super.initState();
 
     // Get Statuses path
-    _app.getStatusesPath().then((path) {
+    _app.getStatusesPath(widget.app).then((path) {
         // Check statuses dir
         if (Directory(path).existsSync()) {
           print('yes dir exists');
@@ -32,6 +37,9 @@ class VideosTabState extends State<VideosTab> {
               _videoList = Directory(path).listSync().map((item) => item.path)
                   .where((item) => item.endsWith(".mp4")).toList();
             });
+        } else {
+          print('Dir does not exists');
+          setState(() => _videoList = []);
         }
     });
 

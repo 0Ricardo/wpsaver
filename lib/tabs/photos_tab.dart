@@ -6,6 +6,12 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 
 class PhotosTab extends StatefulWidget {
+
+  // Variables
+  final String app;
+
+  PhotosTab({@required this.app});
+
   @override
   _PhotosTabState createState() {
     return new _PhotosTabState();
@@ -24,7 +30,7 @@ class _PhotosTabState extends State<PhotosTab> {
     super.initState();
 
       // Get Statuses path
-      _app.getStatusesPath().then((path) {
+      _app.getStatusesPath(widget.app).then((path) {
           // Check statuses dir
           if (Directory(path).existsSync()) {
             print('yes dir exists');
@@ -33,7 +39,10 @@ class _PhotosTabState extends State<PhotosTab> {
                 _imageList = Directory(path).listSync().map((item) => item.path)
                     .where((item) => item.endsWith(".jpg") || item.endsWith(".gif")).toList();
               });
-        }
+          } else {
+            print('Dir does not exists');
+            setState(() => _imageList = []);
+          }
       });
 
   }

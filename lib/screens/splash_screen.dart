@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:status_saver/app/app.dart';
-import 'package:status_saver/screens/home_screen.dart';
+import 'package:status_saver/screens/start_screen.dart';
 import 'package:status_saver/screens/update_app_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -49,7 +49,7 @@ class _SplashScreenState extends State<SplashScreen> {
         /// Check permission to access storage dir
         await _app.checkStoragePermission(
             onGranted: () {
-              _goToHomeScreen();
+              _goToStartScreen();
             }
         );
       }
@@ -58,11 +58,11 @@ class _SplashScreenState extends State<SplashScreen> {
     });
   }
 
-  Future<void> _goToHomeScreen() async {
+  Future<void> _goToStartScreen() async {
     /// Go to home screen
     Future(() {
       Navigator.pushReplacement(context,
-          MaterialPageRoute(builder: (context)=> HomeScreen()));
+          MaterialPageRoute(builder: (context)=> StartScreen()));
     });
     print("Go to home screen");
   }
