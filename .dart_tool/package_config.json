@@ -51,19 +51,19 @@
     },
     {
       "name": "cloud_firestore",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-0.13.6",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-0.14.1+3",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.1"
     },
     {
       "name": "cloud_firestore_platform_interface",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_platform_interface-1.1.2",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_platform_interface-2.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
     {
       "name": "cloud_firestore_web",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_web-0.1.1+2",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_web-0.2.0+4",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
@@ -81,9 +81,9 @@
     },
     {
       "name": "crypto",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-2.1.4",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-2.1.5",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.3"
     },
     {
       "name": "cupertino_icons",
@@ -104,8 +104,14 @@
       "languageVersion": "2.10"
     },
     {
+      "name": "ffi",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/ffi-0.1.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.6"
+    },
+    {
       "name": "file",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/file-5.1.0",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/file-5.2.1",
       "packageUri": "lib/",
       "languageVersion": "2.2"
     },
@@ -117,27 +123,27 @@
     },
     {
       "name": "firebase_admob",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_admob-0.9.3+2",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_admob-0.10.0+2",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.7"
     },
     {
       "name": "firebase_core",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.4.5",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.5.0+1",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.1"
     },
     {
       "name": "firebase_core_platform_interface",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_platform_interface-1.0.4",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_platform_interface-2.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.1"
     },
     {
       "name": "firebase_core_web",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-0.1.1+2",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-0.2.0",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.1"
     },
     {
       "name": "flutter",
@@ -153,7 +159,7 @@
     },
     {
       "name": "flutter_staggered_grid_view",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_staggered_grid_view-0.3.0",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_staggered_grid_view-0.3.2",
       "packageUri": "lib/",
       "languageVersion": "1.19"
     },
@@ -171,13 +177,13 @@
     },
     {
       "name": "font_awesome_flutter",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/font_awesome_flutter-8.8.1",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/font_awesome_flutter-8.10.0",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
     {
       "name": "http",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.12.1",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.12.2",
       "packageUri": "lib/",
       "languageVersion": "2.4"
     },
@@ -189,7 +195,7 @@
     },
     {
       "name": "image",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/image-2.1.12",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/image-2.1.18",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
@@ -201,9 +207,9 @@
     },
     {
       "name": "js",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.1+1",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.2",
       "packageUri": "lib/",
-      "languageVersion": "1.19"
+      "languageVersion": "2.0"
     },
     {
       "name": "matcher",
@@ -231,51 +237,57 @@
     },
     {
       "name": "path_provider",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-1.6.10",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-1.6.18",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
     {
       "name": "path_provider_linux",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-0.0.1+1",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-0.0.1+2",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
     {
       "name": "path_provider_macos",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-0.0.4+3",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-0.0.4+4",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
     {
       "name": "path_provider_platform_interface",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-1.0.2",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-1.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "path_provider_windows",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-0.0.4+1",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
     {
       "name": "pedantic",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.8.0+1",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.9.2",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
     {
       "name": "permission_handler",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-5.0.0+hotfix.8",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-5.0.1+1",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     },
     {
       "name": "permission_handler_platform_interface",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_platform_interface-2.0.0",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_platform_interface-2.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.6"
     },
     {
       "name": "petitparser",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/petitparser-2.4.0",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/petitparser-3.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.4"
+      "languageVersion": "2.7"
     },
     {
       "name": "platform",
@@ -284,26 +296,14 @@
       "languageVersion": "1.24"
     },
     {
-      "name": "platform_detect",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/platform_detect-1.4.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.4"
-    },
-    {
       "name": "plugin_platform_interface",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-1.0.2",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-1.0.3",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
     {
       "name": "process",
       "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/process-3.0.13",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
-      "name": "pub_semver",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/pub_semver-1.4.4",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
@@ -369,27 +369,39 @@
     },
     {
       "name": "url_launcher",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-5.4.10",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-5.7.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "url_launcher_linux",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_linux-0.0.1+1",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
     {
       "name": "url_launcher_macos",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_macos-0.0.1+7",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_macos-0.0.1+8",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
     {
       "name": "url_launcher_platform_interface",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_platform_interface-1.0.7",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_platform_interface-1.0.8",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
     {
       "name": "url_launcher_web",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-0.1.1+6",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-0.1.4+1",
       "packageUri": "lib/",
       "languageVersion": "2.2"
+    },
+    {
+      "name": "url_launcher_windows",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_windows-0.0.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
     },
     {
       "name": "vector_math",
@@ -399,39 +411,45 @@
     },
     {
       "name": "video_player",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/video_player-0.10.11+1",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/video_player-0.10.12+5",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
     {
       "name": "video_player_platform_interface",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/video_player_platform_interface-2.0.2",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/video_player_platform_interface-2.2.0",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.8"
     },
     {
       "name": "video_player_web",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/video_player_web-0.1.3+1",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/video_player_web-0.1.4",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.8"
     },
     {
       "name": "wakelock",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/wakelock-0.1.4+1",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/wakelock-0.1.4+2",
+      "packageUri": "lib/",
+      "languageVersion": "2.7"
+    },
+    {
+      "name": "win32",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/win32-1.7.3",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     },
     {
       "name": "xdg_directories",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/xdg_directories-0.1.0",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/xdg_directories-0.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.3"
     },
     {
       "name": "xml",
-      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/xml-3.6.1",
+      "rootUri": "file:///Users/macbookpro/flutter/.pub-cache/hosted/pub.dartlang.org/xml-4.5.1",
       "packageUri": "lib/",
-      "languageVersion": "2.6"
+      "languageVersion": "2.7"
     },
     {
       "name": "yaml",
@@ -446,7 +464,7 @@
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-10-08T12:59:07.323284Z",
+  "generated": "2020-10-13T05:05:50.692362Z",
   "generator": "pub",
-  "generatorVersion": "2.10.0"
+  "generatorVersion": "2.10.1"
 }
