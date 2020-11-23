@@ -1,4 +1,3 @@
-
 import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/material.dart';
 import 'package:status_saver/app/app.dart';
@@ -8,7 +7,6 @@ import 'package:status_saver/widgets/my_navigation_drawer.dart';
 import 'package:status_saver/tabs/photos_tab.dart';
 
 class HomeScreen extends StatefulWidget {
-
   // Variables
   final String app;
 
@@ -19,29 +17,30 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
   /// Variables
   final App _app = new App();
   InterstitialAd _interstitial;
 
-
   // Tabs list
   final List<Tab> myTabs = <Tab>[
-    Tab(child: Row(
+    Tab(
+        child: Row(
       children: <Widget>[
         Icon(Icons.photo_camera),
         SizedBox(width: 3),
         Text('IMAGES'),
       ],
     )),
-    Tab(child: Row(
+    Tab(
+        child: Row(
       children: <Widget>[
         Icon(Icons.videocam),
         SizedBox(width: 3),
         Text('VIDEOS'),
       ],
     )),
-    Tab(child: Row(
+    Tab(
+        child: Row(
       children: <Widget>[
         Icon(Icons.save_alt),
         SizedBox(width: 3),
@@ -50,21 +49,18 @@ class _HomeScreenState extends State<HomeScreen> {
     )),
   ];
 
-
   @override
   void dispose() {
     _interstitial?.dispose();
     super.dispose();
   }
 
-
   // Show interstitial Ad
-  void _showInterstitialAd() async {
-    _interstitial = _app.createInterstitialAd()
-      ..load()
-      ..show();
-  }
-
+  // void _showInterstitialAd() async {
+  //   _interstitial = _app.createInterstitialAd()
+  //     ..load()
+  //     ..show();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -80,21 +76,20 @@ class _HomeScreenState extends State<HomeScreen> {
             tabs: myTabs,
             onTap: (tapIndex) {
               /// Show interstitial Ad
-              _showInterstitialAd();
+              //_showInterstitialAd();
             },
           ),
         ),
-        body: TabBarView(
-          physics: NeverScrollableScrollPhysics(),
-          children: [
-            /// Images tab body
-            PhotosTab(app: widget.app),
-            /// Videos tab body
-            VideosTab(app: widget.app),
-            /// Saved Status tab body
-            SavedStatusTab(),
-          ]
-        ),
+        body: TabBarView(physics: NeverScrollableScrollPhysics(), children: [
+          /// Images tab body
+          PhotosTab(app: widget.app),
+
+          /// Videos tab body
+          VideosTab(app: widget.app),
+
+          /// Saved Status tab body
+          SavedStatusTab(),
+        ]),
       ),
     );
   }

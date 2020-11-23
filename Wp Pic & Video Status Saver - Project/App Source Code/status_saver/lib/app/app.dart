@@ -9,6 +9,8 @@ import 'package:thumbnails/thumbnails.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class App {
+  InterstitialAd _interstitial;
+
   /// ************** Required App info ************ ///
   final String appPackageName = "com.xamarindo.wpstatusaver";
   final int appVersionNumber = 3;
@@ -35,7 +37,7 @@ class App {
         size: AdSize.banner,
         targetingInfo: targetInfo,
         listener: (MobileAdEvent event) {
-          print('BannerAd MobileAdEvent: $event');
+          //  print('BannerAd MobileAdEvent: $event');
         });
   }
 
@@ -45,7 +47,7 @@ class App {
         adUnitId: "ca-app-pub-8521044456540023/5391914639",
         targetingInfo: targetInfo,
         listener: (MobileAdEvent event) {
-          print('InterstitialAd MobileAdEvent: $event');
+          //  print('InterstitialAd MobileAdEvent: $event');
         });
   }
 
@@ -117,14 +119,14 @@ class App {
       {@required VoidCallback onGranted}) async {
     final permission = await Permission.storage.request();
 
-    print(permission);
+    //  print(permission);
 
     // Check result
     if (permission.isGranted) {
-      print('permission.isGranted: true');
+      //  print('permission.isGranted: true');
       onGranted();
     } else if (permission.isPermanentlyDenied) {
-      print('permission.isPermanentlyDenied: true -> openAppSettings');
+      //  print('permission.isPermanentlyDenied: true -> openAppSettings');
       openAppSettings();
     }
   }
@@ -135,7 +137,7 @@ class App {
     final String externalDirPath =
         absoluteDir.path.replaceFirst('Android/data/$appPackageName/files', '');
     final statusesPath = "$externalDirPath/$app/Media/.Statuses";
-    print('getStatusesPath() -> $statusesPath');
+    // print('getStatusesPath() -> $statusesPath');
     return statusesPath;
   }
 
@@ -145,8 +147,14 @@ class App {
     final String externalDirPath =
         absoluteDir.path.replaceFirst('Android/data/$appPackageName/files', '');
     final statusesPath = "$externalDirPath/$appName";
-    print('getSavedStatusesPath() -> $statusesPath');
+    //  print('getSavedStatusesPath() -> $statusesPath');
     return statusesPath;
+  }
+
+  void _showInterstitialAd() async {
+    _interstitial = createInterstitialAd()
+      ..load()
+      ..show();
   }
 
   /// Save File in Gallery
@@ -179,16 +187,18 @@ class App {
     if (!Directory(statusDir).existsSync()) {
       // Create Status dir
       Directory(statusDir).createSync();
-      print('$appName dir created!');
-    } else {
-      print('$appName dir exists!');
+      //  print('$appName dir created!');
     }
+    //else {
+    //  print('$appName dir exists!');
+    //}
 
     // Copy status to new path
     File(filePath).copySync(
         '$statusDir/Status-${DateTime.now().millisecondsSinceEpoch.toString()}' +
             fileExt);
-    print('Status saved sucessfuly!');
+    // print('Status saved sucessfuly!');
+    _showInterstitialAd();
 
     // Close dialog
     Navigator.of(context).pop();
@@ -196,7 +206,7 @@ class App {
     // Show message
     showDialogInfo(
       context: context,
-      message: 'Status saved successfully!',
+      message: 'Status saved successfully... Please click on AD to help us!',
     );
   }
 

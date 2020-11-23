@@ -1,4 +1,3 @@
-
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -6,20 +5,18 @@ import 'package:video_player/video_player.dart';
 import 'package:chewie/chewie.dart';
 
 class PlayVideo extends StatefulWidget {
-
   final String videoSrc;
 
   PlayVideo({
-    @required  this.videoSrc,
+    @required this.videoSrc,
     Key key,
-  }): super(key:key);
+  }) : super(key: key);
 
   @override
   _PlayVideoState createState() => _PlayVideoState();
 }
 
 class _PlayVideoState extends State<PlayVideo> {
-
   // Variables
   VideoPlayerController _videoPlayerController;
   ChewieController _chewieController;
@@ -27,14 +24,14 @@ class _PlayVideoState extends State<PlayVideo> {
 
   // Initialize video player
   Future<void> _initVideoPlayer() async {
-    print(File(widget.videoSrc));
+    // print(File(widget.videoSrc));
 
     _videoPlayerController = VideoPlayerController.file(File(widget.videoSrc));
 
     // important: initialize _videoPlayerController to get correct video aspect ratio
-     await _videoPlayerController.initialize();
+    await _videoPlayerController.initialize();
 
-    print(_videoPlayerController.value.aspectRatio);
+    //  print(_videoPlayerController.value.aspectRatio);
 
     setState(() {
       _chewieController = ChewieController(
@@ -44,12 +41,12 @@ class _PlayVideoState extends State<PlayVideo> {
           aspectRatio: _videoPlayerController.value.aspectRatio,
           autoPlay: true,
           errorBuilder: (context, errorMessage) {
-            return Center(child: Text(errorMessage),);
-          }
-      );
+            return Center(
+              child: Text(errorMessage),
+            );
+          });
     });
   }
-
 
   @override
   void initState() {
@@ -60,23 +57,22 @@ class _PlayVideoState extends State<PlayVideo> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      future: _future,
-      builder: (context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.done) {
-          return Hero(
-            tag: widget.videoSrc,
-            child: Chewie(
-              controller: _chewieController,
-            ),
-          );
-        } else {
-          return AspectRatio(
-              aspectRatio: 16 / 9,
-              child: Image.asset("assets/images/video_loader.gif", fit: BoxFit.cover)
-          );
-        }
-      }
-    );
+        future: _future,
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.done) {
+            return Hero(
+              tag: widget.videoSrc,
+              child: Chewie(
+                controller: _chewieController,
+              ),
+            );
+          } else {
+            return AspectRatio(
+                aspectRatio: 16 / 9,
+                child: Image.asset("assets/images/video_loader.gif",
+                    fit: BoxFit.cover));
+          }
+        });
   }
 
   @override
