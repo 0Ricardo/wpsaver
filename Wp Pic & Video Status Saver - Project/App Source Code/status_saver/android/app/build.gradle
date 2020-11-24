@@ -48,11 +48,11 @@ android {
 
     defaultConfig {
         applicationId "com.xamarindo.wpstatusaver"
-        minSdkVersion 16
-        targetSdkVersion 28
+        minSdkVersion 21
+        targetSdkVersion 30
         multiDexEnabled true
-        versionCode 3
-        versionName "1.0.3"
+        versionCode 4
+        versionName "1.0.4"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
